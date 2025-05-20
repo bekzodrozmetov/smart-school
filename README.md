@@ -3,7 +3,7 @@
 ## Ishga tushirish:
 
 ```git
-git clone -b developer https://github.com/bekzodrozmetov/smart-school.git
+git clone https://github.com/bekzodrozmetov/smart-school.git
 
 npm install 
 
