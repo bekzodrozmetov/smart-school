@@ -72,10 +72,11 @@ import { LayoutService } from '../service/layout.service';
                         <i class="pi pi-inbox"></i>
                         <span>Messages</span>
                     </button>
-                    <button type="button" class="layout-topbar-action">
-                        <i class="pi pi-user"></i>
-                        <span>Profile</span>
-                    </button>
+                   <button type="button" class="layout-topbar-action" [routerLink]="'/profile'">
+    <i class="pi pi-user"></i>
+    <span>Profile</span>
+</button>
+
                 </div>
             </div>
         </div>
@@ -85,6 +86,7 @@ export class AppTopbar {
     items!: MenuItem[];
 
     constructor(public layoutService: LayoutService) {}
+
 
     toggleDarkMode() {
         this.layoutService.layoutConfig.update((state) => ({ ...state, darkTheme: !state.darkTheme }));
