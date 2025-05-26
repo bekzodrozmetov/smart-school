@@ -1,14 +1,4 @@
-import { Component } from '@angular/core';
-import { StyleClassModule } from 'primeng/styleclass';
-import { Router, RouterModule } from '@angular/router';
-import { RippleModule } from 'primeng/ripple';
-import { ButtonModule } from 'primeng/button';
-
-@Component({
-    selector: 'topbar-widget',
-    imports: [RouterModule, StyleClassModule, ButtonModule, RippleModule],
-    standalone: true,
-    template: `<a class="flex items-center" href="#">
+<a class="flex items-center" href="#">
             <svg viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-12 mr-2">
                 <path
                     fill-rule="evenodd"
@@ -60,8 +50,4 @@ import { ButtonModule } from 'primeng/button';
                 <button pButton pRipple label="Login" routerLink="/auth/login" [rounded]="true" [text]="true"></button>
                 <button pButton pRipple label="Register" routerLink="/auth/login" [rounded]="true"></button>
             </div>
-        </div> `
-})
-export class TopbarWidget {
-    constructor(public router: Router) {}
-}
+        </div>
